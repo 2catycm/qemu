@@ -502,10 +502,11 @@
 #define PTE_SOFT            0x300 /* Reserved for Software */
 
 /* Page table PPN shift amount */
-#define PTE_PPN_SHIFT       10
+#define PTE_PPN_SHIFT       10     // 不知道啥意思 TODO
 
 /* Leaf page shift amount */
-#define PGSHIFT             12
+//#define PGSHIFT             12
+#define PGSHIFT             14     //改为16KiB页面
 
 /* Default Reset Vector adress */
 #define DEFAULT_RSTVEC      0x1000
